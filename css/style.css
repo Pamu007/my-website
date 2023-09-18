@@ -1,0 +1,129 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    color:#088395;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-size: 2rem;
+    color: #35A29F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.developer{
+    
+    display: inline-flex;
+    background-color: #9BE8D861;
+    border-radius: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(4, 1fr) 0.50fr;
+}
+
+.intro-section{
+    grid-column: span 2;
+    background-color: #FAF2D3;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 250px;
+}
+
+.image-dev{
+    display: inline-flex;
+    background-color: #FAF2D3;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+
+}
+
+.title-image{
+    height: 400px;
+    margin: 0px;
+}
+
+.title-text{
+    padding-top: 50px;
+}
+
+.left-ruler{
+    grid-row: span 3;
+    
+}
+
+.right-ruler{
+    grid-row: span 3;
+
+}
+
+.details-component{
+    display: inline-block;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.details-para{
+    font-family: 'Source Serif 4', serif;
+    font-weight: 500;
+    font-size: large;
+    text-align:left;
+    width: 300px;
+
+}
+
+.details-component > h2{
+    text-align: left;
+}
+
+
+.skills-component{
+    text-align: center;
+    
+}
+
+.cards-div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.your-span{
+    text-decoration: #F4E869 underline;
+}
+
+.contact-component{
+    margin-bottom: 50px;
+}
+
+.footer-section{
+    grid-column: span 3;
+    background-color: #FAF2D3;
+    text-align: center;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    .grid-container{
+        
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    }
+
+
+}
